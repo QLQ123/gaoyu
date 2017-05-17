@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong, dl, dt, dd, ol, ul, li,form
+{margin: 0; padding: 0;}
+body {margin:0; padding:0; font-size:14px; color:#333;font-family:微软雅黑,Arial, Helvetica, sans-serif; background:#fafafa;}
+img {border:0 none; font-size:0px;}
+ol, ul {list-style: none;}
+.clearfix {clear:both; line-height:0px; font-size:0px; height:0px; display:block; overflow:hidden;}
+.none {display:none;}
+.clearb{ clear:both;}
+strong, b {
+    font-weight: bold;
+}
+a{text-decoration:none; color:#666;}
+a:hover{text-decoration:underline}
+.mr_clear{ margin-right:0px!important;}
+
+
+
+.header{ width:100%; height:100%; background:#fafafa;}
+.header .header_top{height:95px; height:100%;}
+.header .header_top .header_mid{ width:1105px;    height: 115px; margin:0 auto;}
+.header .header_top .header_mid .logo{ float:left; padding-top:20px;}
+.header .header_top .header_mid .logo a{ }
+.header .header_top .header_mid .tel{ background:url(../images/tel.jpg) left no-repeat;    padding-left:86px; float:right; margin-top:40px;font-size: 16px;}
+.header .header_top .header_mid .tel span{ color:#333;font-size: 16px;}
+.header .header_top .header_mid .tel span b{ color:#FF3232; font-size: 21px;}
+.header .meun{ width:100%;background:#ebebeb;    border-bottom: 5px solid #a51818;}
+.header .meun .meun_mid{ width:1105px; height:50px; margin:0 auto; background:#ebebeb;}
+.header .meun .meun_mid ul{}
+.header .meun .meun_mid ul li{ float:left;  height:50px;margin-left:50px; width:83px;}
+.header .meun .meun_mid ul li a{ text-align:center; height:50px; line-height:50px;color:#333; width:83px;display:block;font-size:16px; text-decoration:none; }
+.header .meun .meun_mid ul li a:hover{ background:#a41a18; color:#FFF;}
+
+/*主体部分*/
+.main{}
+
+.main .container{width: 1105px; margin:0 auto;}
+
+.fwxm{ width:100%; height:155px; margin-top:20px;}
+.fwxm_tit{ width:70px; height:101px;     font-size: 35px;   padding: 20px 0 0 50px; float:left;color: #7d7c7a;}
+.fwxm_tro{ float:right; margin-right:20px;}
+.fwxm_tro ul li{ width:190px; height:135px;float:left; border:0px solid #bbbbbb; margin-left:20px; padding:10px 0 0 10px;  -webkit-box-shadow:2px 2px 10px #bbbbbb;;  
+  -moz-box-shadow:2px 2px 10px #bbbbbb;;  
+  box-shadow:2px 2px 10px #bbbbbb;;  }
+.fwxm_tro ul li:hover{ border-color: #9a9fa4;
+    box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.85);
+    border: 2px solid #fff;}
+.fwxm_tro ul li .fwxm_pic{ width:122px; height:109px;float:left; }
+.fwxm_tro ul li .fwxm_wz{ float:left; margin-left:10px; width:50px; height:75px;    font-size: 18px; position:relative;}
+.fwxm_tro ul li .fwxm_wz span{ width:22px; height:22px;    padding:1px;
+    -moz-border-radius: 4px;      /* Gecko browsers */
+    -webkit-border-radius: 4px;   /* Webkit browsers */
+    border-radius:4px;            /* W3C syntax */background:#9F9688;; position:absolute; top:87px; left:0px; display: block;font-size: small;color: #fff;}
+.fwxm_tro ul li .fwxm_wz span a{ text-decoration:none;    color: #fff;}
+/*公司介绍*/
+.gsjs{ width:100%;margin-top:20px; }
+.gsjs .gs_pic{ width:365px; height:235px; float:left;}
+.gsjs .gs_r{ width:700px; height:220px;  float:right;}
+.gsjs .gs_r .gs_tit{ width:670px; height:40px;    padding-left: 30px; line-height:40px;font-size: 26px;background:#ebebeb;    border-bottom: 5px solid #a51818;}
+.gsjs .gs_r .gs_tit span{font-size: 14px; margin-left:10px;}
+.gsjs .gs_r .gs_tit a{ float: right;font-size: 12px;margin-top: 12px;margin-right: 5px;display: block;width: 49px;height: 30px;line-height: 30px;}
+.gsjs .gs_r .gs_tr{ margin-top:15px; line-height:30px; font-size:14px;text-indent: 28px;}
+
+.main_h{}
+.gscp{ width:635px; float:left;    margin-top: 20px;}
+.gscp .gs_tit{ width:605px; height:50px; line-height:50px; background:#ebebeb;padding-left: 30px; font-size: 26px;background:#ebebeb;   border-bottom: 5px solid #a51818;}
+.gscp .gs_tit span{font-size: 14px; margin-left:10px;}
+.gscp .gs_tit a{  float: right;font-size: 12px;margin-top: 20px;margin-right: 5px;display: block;width: 49px;height: 30px;line-height: 30px;}
+.gscp .tupian{ width:640px; height:175px;    margin-top: 25px;}
+
+.ddzs{ float:right; width:445px;    margin-top: 20px;}
+.ddzs .ddzz_tit{ width:415px; height:50px; line-height:50px; background:#ebebeb;padding-left: 30px; font-size: 26px;background:#ebebeb;   border-bottom: 5px solid #a51818;}
+.ddzs .ddzz_tit span{font-size: 14px; margin-left:10px;}
+.ddzs .ddzz_tit a{  float: right;font-size: 12px;margin-top: 20px;margin-right: 5px;display: block;width: 49px;height: 30px;line-height: 30px;}
+.ddzs .ddzz{    margin-top: 17px;}
+.ddzs .ddzz ul{}
+.ddzs .ddzz ul li{ width:430px; height:30px; line-height:30px;    padding-left: 15px; background:url(../images/news_m_04.png) -475px -613px;}
+.ddzs .ddzz ul li a{width:430px; height:30px; line-height:30px;  }
+.ddzs .ddzz ul li span{ }
+.ddzs .ddzz ul li>.time{ float:right;}
+
+.banner_ad{ width:100%;height:106px;    margin-top: 20px;}
+
+
+.main_b{    margin-top: 25px;}
+.main_b .new{ float:left;}
+.main_b .new .new_tit{ width:100%; height:70px;border-bottom:5px solid #a51818;   background:url(../images/new-tit.jpg) 25px 15px #ebebeb no-repeat;}
+.main_b .new .new_tro{  margin-top:15px;}
+.main_b .new .new_tro ul li{width:370px; height:30px; line-height:30px;    padding-left: 15px;}
+.main_b .new .new_tro ul li a{}
+
+.main_b .h_new{ float:left;}
+.main_b .h_new_tit{width:375px; height:70px; border-bottom:5px solid #a51818;  background:url(../images/r_new.jpg) 25px 15px #ebebeb no-repeat;}
+.main_b .h_new_tro{  margin-top:15px;}
+.main_b .h_new_tro ul li{width:430px; height:30px; line-height:30px;    padding-left: 15px;}
+.main_b .h_new_tro ul li a{}
+
+.link{ width:240px; height:195px; float:left; margin-top:20px;}
+.link .msg{ width:240px; height:90px;}
+.link .zp{width:240px; height:90px; margin-top:10px;}
+
+.foot{ width:100%;height:110px; background:#a51918; margin-top:20px; margin-bottom:15px;}
+.foot .foot_mid{ width:1105px;height:70px; margin:0 auto; background:#a51918; padding-top:30px;}
+.foot .foot_mid p{ color:#CCC; text-align:center; line-height:25px;} 

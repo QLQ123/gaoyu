@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{$title}-<yang:sitename /></title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<include file="Public:common"/>
+</head>
+
+<body>
+<!--top -->
+<div id="top">
+<include file="Public:header" />
+
+</div>
+
+<div class="content">
+<div>
+    <img src="/Public/Home/default/images/banner.jpg" width="1105" height="393">
+  </div>
+	<div class="warp1 mt">
+	
+
+<div class="fwxm">
+           		<div class="fwxm_tit">服务项目</div>
+
+				<if condition="$flag_son">
+					<div class="fwxm_tro">
+                	<ul>
+                      <yang:catlist typeid='$cid' type='son' flag='1'>
+                           <li>
+                            <div class="fwxm_pic">                        
+                                <a href="{$catlist.url}"><img src="{$catlist.catpic}" width="122" height="109"/></a>
+                            </div>
+                            <div class="fwxm_wz">
+                                {$catlist.name}<span><a href="{$catlist.url}">>></a></span>
+                            </div>
+                        </li>
+                       </yang:catlist>                  
+                    </ul>
+                
+                </div>	
+					<div class="mt"></div>
+
+					<else/>
+					<if condition = "$cate['pid'] gt 0">
+						<div class="fwxm_tro">
+                	<ul>
+                      <yang:catlist typeid="$cate['pid']" type='son' flag='1'>
+                           <li>
+                            <div class="fwxm_pic">
+                                <a href="{$catlist.url}"><img src="{$catlist.catpic}" width="122" height="109"/></a>
+                            </div>
+                            <div class="fwxm_wz">
+                                {$catlist.name}<span><a href="{$catlist.url}">>></a></span>
+                            </div>
+                        </li>
+                       </yang:catlist>                  
+                    </ul>
+                
+                </div>	
+					<div class="mt"></div>
+					</if>
+					</if>                       
+</div>
+<div class="f_r" style="width:100%">
+	<h3 class="nybt"><i>您当前的位置：<yang:position /> </i><span>{$cate.name}</span></h3>
+	<div class="xbox wzzw lh">
+	{$cate.content}
+	
+
+
+	</div>
+	</div>
+<div class=" clear"></div>
+</div>
+</div>
+
+<include file="Public:footer" />
+
+</body>
+</html>

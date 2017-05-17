@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{$title}-<yang:sitename /></title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<include file="Public:common"/>
+</head>
+
+<body>
+<!--top -->
+<div id="top">
+<include file="Public:header" />
+
+</div>
+
+<div class="content">
+<div>
+		<img src="/Public/Home/default/images/banner.jpg" width="1105" height="393">
+	</div>
+	<div class="warp1 mt">
+	
+<div class="left f_l">
+
+
+	<div class="">
+	<h3 class="left_bt">联系我们</h3>
+	<div class="xbox left_contactbox">
+	  <p>联系地址：<yang:address /><br />
+	  电话：<yang:phone /></p>
+	</div>
+	</div>
+
+	<div class="mt">
+	<h3 class="left_bt">最新文章</h3>
+	<div class="xbox left_box" id="abt">
+	<ul class="sywz">
+	
+	<yang:artlist limit='10' titlelen='16'>
+	<li><a href="{$artlist.url}">{$artlist.title}</a></li>
+	</yang:artlist>
+	</ul>
+	</div>
+	</div>	
+</div>
+<div class="right f_r">
+	<h3 class="nybt"><i>您当前的位置：<yang:position /> </i><span>{$cate.name}</span></h3>
+	<div class="xbox wzzw"> 
+<div class="biaoti" align="center">{$content.title}</div>
+<div style="border:1px solid #FFE0B4; background:#ffeed5; text-align:center;">发布时间:{$content.publishtime|date='Y-m-d',###} 丨 阅读次数:<yang:click /> </div>
+	<div class="wzzw lh">
+	{$content.content}
+	</div>
+ <div class="fenye1" style="text-align:left;">↑上一篇：<yang:prev /><br/>↓下一篇：<yang:next /> </div> 
+       
+        
+       
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/js/review.js"></script>
+    <script type="text/javascript" language="javascript"> 
+        var get_review_url = "{:U(MODULE_NAME.'/Review/getlist')}";
+        var post_review_url = "{:U(MODULE_NAME.'/Review/add')}";   
+		function changeVcode(obj){
+			$("#VCode").attr("src",'<yang:vcodeurl />'+ '#'+Math.random());
+			return false;
+		}
+	</script>
+    </if>
+    <!--comment end-->
+
+</div>
+
+	</div>
+<div class=" clear"></div>
+</div>
+</div>
+
+
+<include file="Public:footer" />
+
+</body>
+</html>
